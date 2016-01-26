@@ -11,6 +11,7 @@ set -xe
 
 service $SERVICE_NAME restart
 
+set +e
 source_scl
 
 mysql -u root <<'EOF'
